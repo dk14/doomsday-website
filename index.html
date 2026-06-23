@@ -435,6 +435,19 @@
     transform:translateY(-2px);
   }
 
+  .countdown-overlay{
+    position:fixed;                /* stays on screen even when page scrolls */
+    top:1rem; left:auto; right:1rem;
+    padding:.4rem .8rem;
+    background:rgba(0,0,0,.6);      /* semi‑transparent dark background */
+    color: pink;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:1rem;
+    font-weight:600;
+    border-radius:4px;
+    z-index:10;                    /* above the canvas */
+}
+
 </style>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -458,6 +471,8 @@
 
   <!-- 1️⃣  Canvas (static noise) -->
   <canvas id="noise"></canvas>
+
+  <div id="year‑countdown" class="countdown-overlay"></div>
 
   <!-- 2️⃣  Dark overlay that fades over the canvas -->
   <div id="bgFade"></div>
@@ -502,6 +517,33 @@ function resize(){
 window.addEventListener('resize', resize);
 resize();
 
+function updateYearCountdown() {
+  const now   = new Date();                       // current moment
+  const year  = now.getUTCFullYear();             // e.g. 2026
+  // 00:00:00 UTC of Jan 1 of the *next* year → the exact moment the
+  // current year ends.
+  const end   = Date.UTC(year + 1, 0, 1, 0, 0, 0); // milliseconds
+  const diff  = end - now.getTime();              // ms left
+
+  if (diff <= 0) {                               // safety‑net (should never hit)
+    document.getElementById('year‑countdown').textContent = '00:00:00';
+    return;
+  }
+
+  const totalSec = Math.floor(diff / 1000);
+  const hours    = Math.floor(totalSec / 3600);
+  const minutes  = Math.floor((totalSec % 3600) / 60);
+  const seconds  = totalSec % 60;
+
+  // pad with leading zeroes
+  const hh = String(hours).padStart(2, '0');
+  const mm = String(minutes).padStart(2, '0');
+  const ss = String(seconds).padStart(2, '0');
+
+  document.getElementById('year‑countdown').textContent = `${hh}:${mm}:${ss}`;
+}
+
+
 const rng = mulberry32(0x1a2b3c4d);   // any 32‑bit seed you like
 
 function draw(){
@@ -511,6 +553,10 @@ function draw(){
     data[i+3]=255;
   }
   ctx.putImageData(imageData,0,0);
+  if (!window._countdownTimer){
+    window._countdownTimer = setInterval(updateYearCountdown, 1000);
+    updateYearCountdown();               // initial call so the number appears instantly
+  }
 }
 
 /* 30 fps static‑noise animation */
