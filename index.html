@@ -313,7 +313,7 @@ btn.addEventListener('click', e => {
 
         In short, any critical workflow that relies on a **True Random Number
         Generator** can be audited and hardened with the Doomsday Explorer
-        platform.
+        platform. True Random Generators are widely used, and the project (on github) demonstrates that entropy can be reproduced in a deterministic simulation of a source by modeling noise digitally. So, combining multiple sources is not a solution - source itself can be modeled digitally, since Analog-Digital Converters have low frequency resolution (e.g. 1Khz cannot be told from 1.01Khz, Ledger Live does not publish specs, but best ADCs on the market in the price-range of Ledger can only distinguish a handful of frequencies) so spectra is digitally reproducible. Temperature variations and other random factors are rare, so they don't contribute to entropy. The rest of TRNG pipeline (that RNG specs claim to harden) are applied on top of entropy source - so they attacker can simply replay them together with source reproduced. Multiple sources don't save the situation - since low entropy combination is still low entropy (and also requires extra memory and computation to combine), atacker can model cartesian product of sources. Human (gyro) is weak source of entropy, IO events are weak source of entropy - they're periodic (and can be modeled as thermal noise + known transformer).
       </p>
     </div>
   </div>
