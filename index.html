@@ -840,6 +840,7 @@
     z-index:10;                    /* above the canvas */
 }
 
+
 </style>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -934,6 +935,67 @@ function updateYearCountdown() {
 
   document.getElementById('year‑countdown').textContent = `${hh}:${mm}:${ss}`;
 }
+function createVignette(width, height){
+  const vignette = document.createElement('canvas');
+  vignette.width  = width;
+  vignette.height = height;
+
+  const ctxV = vignette.getContext('2d');
+
+  // ---- radial gradient: centre = fully transparent,
+  //    edges = dark (you can tweak the colours / stops) ----
+  const grad = ctxV.createRadialGradient(
+        width / 2, height / 2,   // centre of the circle
+        0,                       // inner radius
+        width / 2, height / 2,   // outer radius (reaches the corners)
+        Math.max(width, height)  // big enough to cover the whole canvas
+  );
+
+  // stop 0  = transparent centre
+  // stop 1  = dark edge – you can change the colour / opacity
+  grad.addColorStop(0.0, 'rgba(0,0,0,0)');      // keep most of the centre clear
+  grad.addColorStop(1.0, 'rgba(0,0,0,0.65)');   // darken the very corners
+
+  ctxV.fillStyle = grad;
+  ctxV.fillRect(0, 0, width, height);
+
+  return vignette;
+}
+
+const vignetteCanvas = createVignette(canvas.width, canvas.height);
+
+
+function drawNoise(){
+  for (let i = 0, len = data.length; i < len; i += 4){
+    const v = rng() * 90;        // dark‑gray range 0‑90
+    data[i] = data[i+1] = data[i+2] = v;
+    data[i+3] = 255;
+  }
+  ctx.putImageData(imageData, 0, 0);
+  ctx.drawImage(vignetteCanvas, 0, 0);
+}
+
+
+let lastPos   = null;          // {x, y}
+let moveDist  = 0;            // cumulative distance in the last interval
+let slowFactor = 1;           // 1 = full speed, >1 = slower (frames are skipped)
+
+function handleMove(x, y){
+  if (lastPos){
+    const dx = x - lastPos.x;
+    const dy = y - lastPos.y;
+    moveDist += Math.hypot(dx, dy);   // Euclidean distance
+  }
+  lastPos = {x, y};
+}
+
+/* b. Listen to mouse and touch events */
+window.addEventListener('mousemove', e => handleMove(e.clientX, e.clientY));
+window.addEventListener('touchmove', e => {
+  const t = e.touches[0];
+  handleMove(t.clientX, t.clientY);
+});
+
 
 
 const rng = mulberry32(0x1a2b3c4d);   // any 32‑bit seed you like
@@ -951,6 +1013,46 @@ function draw(){
   }
 }
 
+setInterval(() => {
+  // ---- 1️⃣  distance → slowdown ----
+  //   0‑30 px → factor ≈1 (no slowdown)
+  //   30‑200 px → factor 1‑3
+  //   >200 px → factor caps at ~5
+  const dist = Math.min(moveDist, 300);          // clamp to avoid extreme spikes
+  const factor = 1 + Math.pow(dist / 3, 2);   // exponential curve
+
+  // ---- 2️⃣  smooth transition (low‑pass filter) ----
+  //   we lerp towards the new factor so the change feels fluid
+  const smoothing = 0.9;                        // 0‑1, lower = slower transition
+  slowFactor = slowFactor * (1 - smoothing) + factor * smoothing;
+
+  if (slowFactor > 5.0) {
+    slowFactor = 5.0
+  }
+
+  // reset distance for the next interval
+  moveDist = 0;
+}, 10);
+
+
+/* -------------------------------------------------
+   5️⃣  Main animation scheduler (frame‑skip based)
+   ------------------------------------------------- */
+let lastRender = performance.now();
+
+function renderLoop(timestamp){
+  /* ---- decide if we should draw this frame? ----
+     We compute the desired frame interval from `slowFactor`.
+     Normal speed → 16 ms (≈60 fps).  Slow factor 3 → ~48 ms per draw.
+  */
+  const desiredInterval = 16 * slowFactor;   // 16 ms ≈ 60 fps
+  if (timestamp - lastRender >= desiredInterval){
+    drawNoise();                // your original noise drawing
+    lastRender = timestamp;
+  }
+  requestAnimationFrame(renderLoop);
+}
+
 /* 30 fps static‑noise animation */
 let then = 0;
 function animate(now){
@@ -961,7 +1063,9 @@ function animate(now){
   }
   requestAnimationFrame(animate);
 }
-requestAnimationFrame(animate);
+updateYearCountdown();                 // start the countdown overlay
+setInterval(updateYearCountdown, 1000)
+requestAnimationFrame(renderLoop);
 
 /* -------------------------------------------------
    2️⃣  Click handler – start both fades, then navigate
