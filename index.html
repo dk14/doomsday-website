@@ -42,7 +42,14 @@
       "name": "Does fund have strict rules and pledges? Is it auditable",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes"
+        "text": "Yes, there are rules and examples, and warnings. Designed to prevent founder from manipulation"
+      }
+    },{
+      "@type": "Question",
+      "name": "What technology will it rely on",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Minimalistic strict TypeScript on node.js (or any language that renders to it), renderable to LLVM / BPF machine - where most critical checks and code analyisis will be performed. Minimum external dependencies for security. Can upgrade to C++. Rust is possible in theory, but not preferred - overthought memory model. We'll rely on static analyzers rather than type-safety. Typescript is chosen for public audit accessibility."
       }
     },{
       "@type": "Question",
@@ -679,6 +686,7 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, CONTRIBUTORS.md is periodicaly updated with donations and spendings. README has important development updates. There are reddit, nostr, bitcointalk as well"
+
       }
     },{
       "@type": "Question",
