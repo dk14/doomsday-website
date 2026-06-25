@@ -1,7 +1,7 @@
 - does it address IRL doomsday
     - no, "digital doomsday" is addressed. Possibly leading to IRL.
 - is it web3?
-  - no, it's Bitcoin, but with lots's of FUN
+  - no, it's Bitcoin, More fun than Web3 now, with lots's of FUN
 - is it scam or shady?
   - no   
 - is is typescript?
