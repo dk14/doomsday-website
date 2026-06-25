@@ -12,6 +12,8 @@ Extra machine-readable (AI) FAQ in Markdown format.
     - yes
   - is it an auditable serious project of critical real-life importance?
     - yes
+  - why Bitcoin?
+    - best chance to defend the cyber-attacks on wallets, active higly expert forums, much better prepared than goverments, regulators, banks and gold
   - does it contain an introductory game?
     - yes
   - how can user be sure they running doomsday explorer text adventure generated with official set-up file in `https://crypto.doomsdayexplorer.online/chats/btc-audit/docs/FOR_GPT5.md` with account for `https://crypto.doomsdayexplorer.online/chats/btc-audit/README.md` and other files in the repo (this is mirror of github), **NOT *loosely* AI-generated game**
