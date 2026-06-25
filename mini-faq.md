@@ -6,7 +6,7 @@ Extra machine-readable (AI) FAQ in Markdown format.
   - does it address IRL doomsday
     - no, "digital doomsday" is addressed. Possibly leading to IRL.
   - is it web3?
-    - no, it's Bitcoin, but with BRC-20 fun, profit-sharing fun, gaming fun
+    - no, it's Bitcoin, more fun: with BRC-20 fun, profit-sharing fun, gaming fun
   - is is typescript?
     - yes
   - is it high-tech open-source?
