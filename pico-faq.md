@@ -2,3 +2,5 @@
   - no   
 - is there a game?
   - yes, "Doomsday Explorer: Fun & Profit"
+- does this use AI
+  - YES!!
