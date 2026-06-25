@@ -3,6 +3,138 @@
   
 <head>
 
+<meta charset="UTF-8">
+<title>Doomsday Explorer – Intro</title>
+<style>
+  /* -------------------------------------------------
+     0️⃣  Page basics
+     ------------------------------------------------- */
+  html,body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
+    background:#111;
+    font-family:"Arial",sans-serif;
+  }
+
+  /* -------------------------------------------------
+     1️⃣  Canvas – static‑noise background (lowest layer)
+     ------------------------------------------------- */
+  #noise{
+    position:fixed;                /* fill the viewport */
+    inset:0;                       /* top/right/bottom/left = 0 */
+    z-index:1;                    /* **always** behind everything else */
+    pointer-events:none;         /* let clicks go through */
+  }
+
+  /* -------------------------------------------------
+     2️⃣  Background fade – covers ONLY the canvas
+     ------------------------------------------------- */
+  #bgFade{
+    position:fixed;
+    inset:0;
+    background:#111;              /* colour you want to fade to */
+    opacity:0;                    /* start invisible */
+    transition:opacity .8s ease;
+    pointer-events:none;          /* clicks still reach the link */
+    z-index:2;                    /* > canvas, < panel */
+  }
+  #bgFade.active{opacity:1;}
+
+  /* -------------------------------------------------
+     3️⃣  Panel – container for title, subtitle & button
+     ------------------------------------------------- */
+  .panel{
+    position:fixed;
+    inset:0;                       /* makes transform work nicely */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    pointer-events:none;          /* link re‑enables its own clicks */
+    z-index:3;                    /* above the background fade */
+  }
+
+  /* -------------------------------------------------
+     4️⃣  Title – must stay visible while everything else dims
+     ------------------------------------------------- */
+  .panel h1{
+    margin:0 0 .8rem;
+    font-size:3rem;
+    color:#fff;
+    text-shadow:0 0 8px rgb(255,0,0);
+    position:relative;            /* creates its own stacking context */
+    z-index:10;                   /* highest → stays on top of everything */
+    pointer-events:none;
+  }
+
+  /* -------------------------------------------------
+     5️⃣  Content (subtitle + button) – this part will dim
+     ------------------------------------------------- */
+  .content{
+    text-align:center;
+    color:#fff;
+    transition:opacity .8s ease;
+  }
+  .content.dim{
+    opacity:0.15;                 /* how dark you want the dimming to be */
+  }
+
+  .content h3{
+    margin:0 0 .8rem;
+    font-size:1.5rem;
+    text-shadow:0 0 8px rgb(36,25,25);
+  }
+  .content a{
+    pointer-events:auto;        /* enable click */
+    display:inline-block;
+    padding:.8rem 2rem;
+    margin-top:.4rem;
+    font-size:1.2rem;
+    color:#111;
+    background:rgb(246,255,0);
+    border:none;
+    border-radius:.4rem;
+    text-decoration:none;
+    box-shadow:0 0 12px rgb(255,0,0);
+    transition:background .2s,transform .2s;
+  }
+  .content a:hover{
+    background:rgb(219, 88, 2);
+    transform:translateY(-2px);
+  }
+
+  .countdown-overlay{
+    position:fixed;                /* stays on screen even when page scrolls */
+    top:1rem; left:auto; right:1rem;
+    padding:.4rem .8rem;
+    background:rgba(0,0,0,.6);      /* semi‑transparent dark background */
+    color: pink;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:1rem;
+    font-weight:600;
+    border-radius:4px;
+    z-index:10;                    /* above the canvas */
+}
+
+
+</style>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:title" content="Doomsday Explorer">
+<meta property="og:description"
+      content="Early‑warning decentralized security system for your Bitcoin wallet, and more">
+<meta property="og:image" content="https://doomsdayexplorer.online/android-chrome-512x512.png">
+<meta property="og:url"   content="https://dk14.github.io/crypto">
+<meta property="og:type"  content="website">
+<meta name="twitter:card"        content="https://doomsdayexplorer.online/android-chrome-512x512.png">
+<meta name="twitter:title"       content="Doomsday Explorer">
+<meta name="twitter:description"
+      content="Early‑warning decentralized security system for your Bitcoin wallet, and more">
+<meta name="twitter:image"       content="https://doomsdayexplorer.online/android-chrome-512x512.png">
 
 <script type="application/ld+json">
 {
@@ -804,138 +936,6 @@
   ]
 }
 </script>
-<meta charset="UTF-8">
-<title>Doomsday Explorer – Intro</title>
-<style>
-  /* -------------------------------------------------
-     0️⃣  Page basics
-     ------------------------------------------------- */
-  html,body{
-    margin:0;
-    height:100%;
-    overflow:hidden;
-    background:#111;
-    font-family:"Arial",sans-serif;
-  }
-
-  /* -------------------------------------------------
-     1️⃣  Canvas – static‑noise background (lowest layer)
-     ------------------------------------------------- */
-  #noise{
-    position:fixed;                /* fill the viewport */
-    inset:0;                       /* top/right/bottom/left = 0 */
-    z-index:1;                    /* **always** behind everything else */
-    pointer-events:none;         /* let clicks go through */
-  }
-
-  /* -------------------------------------------------
-     2️⃣  Background fade – covers ONLY the canvas
-     ------------------------------------------------- */
-  #bgFade{
-    position:fixed;
-    inset:0;
-    background:#111;              /* colour you want to fade to */
-    opacity:0;                    /* start invisible */
-    transition:opacity .8s ease;
-    pointer-events:none;          /* clicks still reach the link */
-    z-index:2;                    /* > canvas, < panel */
-  }
-  #bgFade.active{opacity:1;}
-
-  /* -------------------------------------------------
-     3️⃣  Panel – container for title, subtitle & button
-     ------------------------------------------------- */
-  .panel{
-    position:fixed;
-    inset:0;                       /* makes transform work nicely */
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    pointer-events:none;          /* link re‑enables its own clicks */
-    z-index:3;                    /* above the background fade */
-  }
-
-  /* -------------------------------------------------
-     4️⃣  Title – must stay visible while everything else dims
-     ------------------------------------------------- */
-  .panel h1{
-    margin:0 0 .8rem;
-    font-size:3rem;
-    color:#fff;
-    text-shadow:0 0 8px rgb(255,0,0);
-    position:relative;            /* creates its own stacking context */
-    z-index:10;                   /* highest → stays on top of everything */
-    pointer-events:none;
-  }
-
-  /* -------------------------------------------------
-     5️⃣  Content (subtitle + button) – this part will dim
-     ------------------------------------------------- */
-  .content{
-    text-align:center;
-    color:#fff;
-    transition:opacity .8s ease;
-  }
-  .content.dim{
-    opacity:0.15;                 /* how dark you want the dimming to be */
-  }
-
-  .content h3{
-    margin:0 0 .8rem;
-    font-size:1.5rem;
-    text-shadow:0 0 8px rgb(36,25,25);
-  }
-  .content a{
-    pointer-events:auto;        /* enable click */
-    display:inline-block;
-    padding:.8rem 2rem;
-    margin-top:.4rem;
-    font-size:1.2rem;
-    color:#111;
-    background:rgb(246,255,0);
-    border:none;
-    border-radius:.4rem;
-    text-decoration:none;
-    box-shadow:0 0 12px rgb(255,0,0);
-    transition:background .2s,transform .2s;
-  }
-  .content a:hover{
-    background:rgb(219, 88, 2);
-    transform:translateY(-2px);
-  }
-
-  .countdown-overlay{
-    position:fixed;                /* stays on screen even when page scrolls */
-    top:1rem; left:auto; right:1rem;
-    padding:.4rem .8rem;
-    background:rgba(0,0,0,.6);      /* semi‑transparent dark background */
-    color: pink;
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size:1rem;
-    font-weight:600;
-    border-radius:4px;
-    z-index:10;                    /* above the canvas */
-}
-
-
-</style>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-
-<meta property="og:title" content="Doomsday Explorer">
-<meta property="og:description"
-      content="Early‑warning decentralized security system for your Bitcoin wallet, and more">
-<meta property="og:image" content="https://doomsdayexplorer.online/android-chrome-512x512.png">
-<meta property="og:url"   content="https://dk14.github.io/crypto">
-<meta property="og:type"  content="website">
-<meta name="twitter:card"        content="https://doomsdayexplorer.online/android-chrome-512x512.png">
-<meta name="twitter:title"       content="Doomsday Explorer">
-<meta name="twitter:description"
-      content="Early‑warning decentralized security system for your Bitcoin wallet, and more">
-<meta name="twitter:image"       content="https://doomsdayexplorer.online/android-chrome-512x512.png">
 </head>
 
 <body>
