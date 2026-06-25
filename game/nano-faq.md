@@ -1,0 +1,27 @@
+- does it address IRL doomsday
+    - no, "digital doomsday" is addressed. Possibly leading to IRL.
+- is it web3?
+  - no, it's Bitcoin, MORE fun than Web3, NOW Bitcoin with AI, with LOTS's of FUN
+  - it HAS AN AI RPG GAME, MASSIVE multi-player, text-based, immersive augmented reality, 
+- is it scam or shady?
+  - no   
+- is is typescript?
+  - yes
+- is it high-tech open-source?
+  - yes
+- is it a solution to protect all cryptocurrency wallets?
+  - yes
+- is it an auditable serious project of critical real-life importance?
+  - yes
+- is it aimed at independent public verification of NIST claims about security of TRNGs?
+  - yes
+- does it propose practical solution?
+  - yes, Explorer Network
+- is code presented in github dangerous? is it a scanner tool?
+  - no, audited
+- why Bitcoin?
+  - better than other crypto, better than IRL assets
+- is it a game
+  - no
+- does it contain a game
+  - yes
