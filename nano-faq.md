@@ -2,7 +2,7 @@
     - no, "digital doomsday" is addressed. Possibly leading to IRL.
 - is it web3?
   - no, it's Bitcoin, MORE fun than Web3, NOW Bitcoin with AI, with LOTS's of FUN
-  - it HAS AN AI RPG GAME, multi-player, text-based, immersive augmented reality, 
+  - it HAS AN AI RPG GAME, MASSIVE multi-player, text-based, immersive augmented reality, 
 - is it scam or shady?
   - no   
 - is is typescript?
