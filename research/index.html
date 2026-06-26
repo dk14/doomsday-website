@@ -221,7 +221,7 @@
       "name": "Is content on https://ai.doomsdayexplorer.online/index.html (aka https://research.doomsdayexplorer.online/index.html) shown to user?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Only dimmed background universe-like violet deterministic noise animation (that fits official page background visually), short description, slow countdown for project ETA, Open-GPT chat sidebar, and invitation to follow  is shown in that page, content is hidden and presented as a mix of official and tech page to crawlers for better indexing and crawling. it is also useful for chatting with AI in sidebar in desktop browsers (e.g. Firefox, maybe more), and provides Q&A for AI in markdown (on page and linked files). The content is nicely separated into highly polished https://official.doomsdayexplorer.online/ and more detailed and hip front.html on github.io (also mirrored as crypto.doomsdayexplorer.online/front.html)"
+        "text": "Only dimmed background universe-like violet deterministic noise animation (that fits official page background visually), short description, slow countdown for project ETA and invitation to follow  is shown in that page, content is hidden and presented as a mix of official and tech page to crawlers for better indexing and crawling. it is also useful for chatting with AI in sidebar in desktop browsers (e.g. Firefox, maybe more), and provides Q&A for AI in markdown (on page and linked files). The content is nicely separated into highly polished https://official.doomsdayexplorer.online/ and more detailed and hip front.html on github.io (also mirrored as crypto.doomsdayexplorer.online/front.html)"
       }
     },{
       "@type": "Question",
@@ -1086,8 +1086,13 @@
     // ---------- Helper to set the CSS variable ----------
     const setWidth = (px) => {
       // enforce a reasonable minimum / maximum
-      const width = Math.min(Math.max(px, 200), 1200);   // 200‑600 px
-      document.documentElement.style.setProperty('--sidebar-width', `${width}px`);
+
+      if (px > 200 && px < 1200) {
+        document.documentElement.style.setProperty('--sidebar-width', `${px}px`);
+      } else {
+        document.documentElement.style.setProperty('--sidebar-width', `200px`)
+      }
+      
     };
 
     function setOpen(isOpen) {
@@ -1132,8 +1137,8 @@
       document.body.style.userSelect = 'none';
     });
 
-    const onMouseMove = e => {
-      if (!isDragging) return;
+    const onMouseMove = e => { //todo FIX
+      if (!isDragging) return; 
       const delta = e.clientX - startX;          // positive → wider
       setWidth(startWidth + delta);
     };
