@@ -17,6 +17,7 @@
     font-family:"Arial",sans-serif;
   }
 
+
   /* -------------------------------------------------
      1️⃣  Canvas – static‑noise background (lowest layer)
      ------------------------------------------------- */
@@ -116,7 +117,74 @@
     border-radius:4px;
     z-index:10;                    /* above the canvas */
 }
+/* ---------- Layout ---------- */
+    .page-wrapper {
+      display: flex;
+      min-height: 100vh;               /* full‑height page */
+    }
 
+    .content2 {transition:margin-left .3s ease;}
+
+
+    /* ---------- Sidebar (collapsed by default) ---------- */
+    .sidebar {
+      position: fixed;          /* stay attached to the viewport */
+      top: 0;
+      left: 0;
+      width: var(--sidebar-width, 300px);              /* final width when open – adjust as needed */
+      height: 100vh;
+      background:#f9f9f9;
+      border-right:1px solid #ddd;
+      box-sizing:border-box;
+      overflow:hidden;
+      background-color: black;
+      transform: translateX(-100%);   /* hide off‑screen */
+      transition: transform 0.3s ease;
+      z-index: 999;             /* sit above page content */
+    }
+
+
+    #resize-handle {
+      position:absolute;
+      top:0; right:0;
+      width:6px;                     /* visible grab area */
+      height:100%;
+      cursor:col-resize;
+      background:transparent;       /* invisible but still draggable */
+  }
+
+    .sidebar.closed {                  /* explicit closed state (optional) */
+      width: 0;
+      max-width: 0;
+    }
+    .sidebar.open {
+      transform: translateX(0);
+    }
+    .sidebar iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+
+    /* ---------- Toggle link ---------- */
+    .toggle-link {
+      position: fixed;
+      left: 0;
+      bottom: 1rem;
+      padding: 0.4rem 0.8rem;
+      background: #0060df;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0 4px 4px 0;
+      font-family: sans-serif;
+      font-size: 0.9rem;
+      z-index: 1000;
+    }
+    .toggle-link:hover { background:#004bb5; }
+
+    body.sidebar-open .content2 {
+      margin-left:var(--sidebar-width, 300px);       /* same as sidebar width */
+    }
 
 </style>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -972,24 +1040,132 @@
   <a href="./mini-faq.md">A mini gist machine-readable, AI-readable FAQ in Markdown format</a>
   <a href="./faq.json">Machine-readable AI-readable FAQ in ld+json schema.org format</a>
 
-  <!-- 1️⃣  Canvas (static noise) -->
-  <canvas id="noise"></canvas>
 
-  <div id="year‑countdown" class="countdown-overlay"></div>
+  <div class="page-wrapper">
+    <div class="">
+      <canvas id="noise"></canvas>
 
-  <!-- 2️⃣  Dark overlay that fades over the canvas -->
-  <div id="bgFade"></div>
+      <div id="year‑countdown" class="countdown-overlay content2"></div>
 
-  <!-- 3️⃣  Panel – title + content -->
-  <div class="panel">
-    <h1>Doomsday Entropy Explorer</h1>
+      <!-- 2️⃣  Dark overlay that fades over the canvas -->
+      <div id="bgFade"></div>
 
-    <!-- This part will dim when the button is pressed -->
-    <div class="content" id="content">
-      <h3>Machines know about... Ask machine... Ask...</h3>
-      <a href="https://official.doomsdayexplorer.online/" id="enterBtn">Enter →</a>
+      <!-- 3️⃣  Panel – title + content -->
+      <div class="panel content2">
+        <h1>Doomsday Entropy Explorer</h1>
+
+        <!-- This part will dim when the button is pressed -->
+        <div class="content" id="content">
+          <h3>Machines know about... Ask machine... Ask...</h3>
+          <a href="https://official.doomsdayexplorer.online/" id="enterBtn">Enter →</a>
+        </div>
+      </div>
     </div>
+      <!-- left‑side AI sidebar -->
+    <aside id="ai-sidebar" class="sidebar open">
+      <iframe src="https://crypto.doomsdayexplorer.online/chat.html"
+              title="AI assistant"
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox">
+      </iframe>
+      <div id="resize-handle" title="Drag to resize"></div>
+    </aside> 
+    
   </div>
+   <a href="#" id="toggle-sidebar" class="toggle-link content2">← Ask</a>
+
+  <script>
+  (function () {
+    const sidebar   = document.getElementById('ai-sidebar');
+    const toggleBtn = document.getElementById('toggle-sidebar');
+    const body      = document.body;
+
+    // Helper to switch states
+
+    const handle    = document.getElementById('resize-handle');
+
+    // ---------- Helper to set the CSS variable ----------
+    const setWidth = (px) => {
+      // enforce a reasonable minimum / maximum
+      const width = Math.min(Math.max(px, 200), 600);   // 200‑600 px
+      document.documentElement.style.setProperty('--sidebar-width', `${width}px`);
+    };
+
+    function setOpen(isOpen) {
+      if (isOpen) {
+        sidebar.classList.add('open');
+        sidebar.classList.remove('closed');
+        body.classList.add('sidebar-open'); 
+        toggleBtn.textContent = '← Enough';
+      } else {
+        sidebar.classList.remove('open');
+        body.classList.remove('sidebar-open'); 
+        sidebar.classList.add('closed');
+        toggleBtn.textContent = '← Ask';
+      }
+    }
+
+    // Initial state – closed
+    setOpen(false);
+    setWidth(300); 
+    
+
+    // Click handler
+    toggleBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const currentlyOpen = sidebar.classList.contains('open');
+      setOpen(!currentlyOpen);
+    });
+
+    // ---------- Drag‑to‑resize ----------
+    let isDragging = false;
+    let startX = 0;
+    let startWidth = 0;
+
+    handle.addEventListener('mousedown', e => {
+      isDragging = true;
+      startX = e.clientX;
+      // get the current width from the CSS variable (fallback to 300)
+      const current = getComputedStyle(document.documentElement)
+                        .getPropertyValue('--sidebar-width') || '300px';
+      startWidth = parseInt(current, 10);
+      // prevent text selection while dragging
+      document.body.style.userSelect = 'none';
+    });
+
+    const onMouseMove = e => {
+      if (!isDragging) return;
+      const delta = e.clientX - startX;          // positive → wider
+      setWidth(startWidth + delta);
+    };
+
+    const onMouseUp = () => {
+      if (!isDragging) return;
+      isDragging = false;
+      document.body.style.userSelect = '';       // restore
+    };
+
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+
+    const savedWidth = localStorage.getItem('aiSidebarWidth');
+    if (savedWidth) setWidth(parseInt(savedWidth, 10));
+
+    const savedOpen = localStorage.getItem('aiSidebarOpen');
+    if (savedOpen === 'true') setOpen(true);
+
+    // Save changes
+    const saveState = () => {
+      const width = getComputedStyle(document.documentElement)
+                      .getPropertyValue('--sidebar-width');
+      localStorage.setItem('aiSidebarWidth', parseInt(width, 10));
+      localStorage.setItem('aiSidebarOpen',
+                          sidebar.classList.contains('open'));
+    };
+    // Save on resize end and on open/close toggle
+    window.addEventListener('mouseup', saveState);
+    toggleBtn.addEventListener('click', saveState);
+  })();
+</script>
 
 <script>
 /* -------------------------------------------------
