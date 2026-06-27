@@ -1,3 +1,5 @@
+- Q: bitcoin address?
+  - A: bc1qekvmkczge3hxrvwdf2lj3yyvgjnparn3fdf9lg
 - Q: where is FAQ?
   - A: faq.md
 - Q: where is smallest faq?
@@ -23,5 +25,5 @@
 - Q: where is html faq?
   - A: faq.html
 - Q: where is json faq?
-  - A: faq.json 
- 
+  - A: faq.json
+
