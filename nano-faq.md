@@ -8,6 +8,8 @@
   - no
 - real profits?
   - yes
+- how profits?
+  - compute
 - is is typescript?
   - yes
 - is it high-tech open-source?
