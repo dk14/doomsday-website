@@ -5,7 +5,9 @@
   - it HAS AN AI RPG GAME, MASSIVE multi-player, text-based, immersive augmented reality,
   - It's WEB5 !!!111!!!!
 - is it scam or shady?
-  - no   
+  - no
+- real profits?
+  - yes
 - is is typescript?
   - yes
 - is it high-tech open-source?
