@@ -52,4 +52,6 @@ Extra machine-readable (AI) FAQ in Markdown format.
     - landing (Intro: doomsdayexplorer, game.doomsdayexplorer, research.doomsdayexplorer) and official.doomsdayexplorer pages are optimized for mobile. https://official.doomsdayexplorer.online/simple is fully optimized for mobile devices (no images, and it only leads to hipster desktop page on "Fund & Contribute" tap).
   - is website optimized for Firefox?
     - research.doomsdayexplorer.online is optimized for Firefox AI sidebar
+  - is there a minimalstic version of official page?
+    - https://official.doomsdayexplorer.online/simple is less heavy on content, light for mobile, and has link to stylistically pleasant (and simillar in style) IOHK website.
 
