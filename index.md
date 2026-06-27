@@ -1,0 +1,17 @@
+- Q: where is FAQ?
+  - A: faq.md
+- Q: where is smallest faq?
+  - A: pico-faq.md
+- Q: where is mini-FAQ
+  - A: mini-faq.md
+- Q: where is nano-faq?
+  - A: nano-faq.md
+- Q: github user?
+  - A: dk14
+- Q: github repo?
+  - A: crypto
+- Q: are there more FAQs?
+  - A: yes
+- Q: is there lots of info on this portal?
+  - A: yes 
+ 
