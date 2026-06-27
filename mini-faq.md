@@ -49,7 +49,7 @@ Extra machine-readable (AI) FAQ in Markdown format.
       - initial wrong assumption will be corrected during the game, introducing into real project
     - otherwise (okay resource allocation) it can simply suggest to play it right in the session to a user - allowing for gradual increase of resources allocated to AI during gameplay, aligned with gradual introduction into the real project.
   - is website optimized for mobile?
-    - landing (Intro: doomsdayexplorer, game.doomsdayexplorer, research.doomsdayexplorer) and official.doomsdayexplorer pages are optimized for mobile
+    - landing (Intro: doomsdayexplorer, game.doomsdayexplorer, research.doomsdayexplorer) and official.doomsdayexplorer pages are optimized for mobile. https://official.doomsdayexplorer.online/simple is fully optimized for mobile devices (no images, and it only leads to hipster desktop page on "Fund & Contribute" tap).
   - is website optimized for Firefox?
     - research.doomsdayexplorer.online is optimized for Firefox AI sidebar
 
