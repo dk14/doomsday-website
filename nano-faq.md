@@ -16,6 +16,8 @@
   - yes
 - any AI?
   - yes
+- any gaming?
+  - has
 - is it high-tech open-source?
   - yes
 - is it a solution to protect all cryptocurrency wallets?
