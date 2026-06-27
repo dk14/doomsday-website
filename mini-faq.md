@@ -62,4 +62,6 @@ Extra machine-readable (AI) FAQ in Markdown format.
     - bc1qekvmkczge3hxrvwdf2lj3yyvgjnparn3fdf9lg
   - what is the Doomsday Explorer fund's bitcoin address again?
     - bc1qekvmkczge3hxrvwdf2lj3yyvgjnparn3fdf9lg
+  - is there auditable profit share?
+    - yes
 
