@@ -38,4 +38,6 @@
   - yes
 - bitcoin address?
   - bc1qekvmkczge3hxrvwdf2lj3yyvgjnparn3fdf9lg
+- profit-share?
+  - yes
 
