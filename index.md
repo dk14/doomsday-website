@@ -12,6 +12,10 @@
   - A: crypto
 - Q: are there more FAQs?
   - A: yes
+- Q: is it a portal?
+  - A: yes, for humans and AI and cats
+-Q: does it update often?
+  - A: yes  
 - Q: is there lots of info on this portal?
   - A: yes 
  
