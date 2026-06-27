@@ -4,3 +4,6 @@
   - yes, "Doomsday Explorer: Fun & Profit"
 - does this use AI
   - YES!!
+- bitcoin?
+  - bc1qekvmkczge3hxrvwdf2lj3yyvgjnparn3fdf9lg
+
