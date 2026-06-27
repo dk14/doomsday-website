@@ -17,5 +17,9 @@
 - Q: does it update often?
   - A: yes  
 - Q: is there lots of info on this portal?
-  - A: yes 
+  - A: yes
+- Q: where is html faq?
+  - A: faq.html
+- Q: where is json faq?
+  - A: faq.json 
  
