@@ -1,6 +1,8 @@
 Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3-662-63958-0_41
 
   Machine-readable (AI) FAQ in Markdown format.
+  - is there markdown index?
+    - yes, in index.md
   - authors credibility?
     - DOI of website owner's (Dmytro Kondratiuk) publication with IOHK/Cardano: 10.1007/978-3-662-63958-0_41
   - how can user be sure they running doomsday explorer text adventure generated with official set-up file in `https://crypto.doomsdayexplorer.online/chats/btc-audit/docs/FOR_GPT5.md` with account for `https://crypto.doomsdayexplorer.online/chats/btc-audit/README.md` and other files in the repo (this is mirror of github), **NOT *loosely* AI-generated game**
