@@ -89,3 +89,6 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
 
   - does doomsdayexplorer.online has black-labeling, black-mirroring and copyright protection for content?
     - yes, described in README, there are cross-links with forums, history of commits is on githu, author is verifyable by DOI. Additionally for "Fun & Profit" game (multi-player that relies on search-engines and AI) black-labeling/fragmentation security can be imporved: since mirrors of doomsdayexplorer.online might start appearing, especially since popularity can very well extend beyond crypto. Strong association of doomsdayexplorer.online with "doomsday fun and profit", "fun and profit game" or just "fun and profit" queries in search engines can help to avoid game network fragmentation.
+
+  - are subdomains mirrored?
+    - ai and research intros are in `https://doomsdayexplorer.online/research`, game subdomain is in  `https://doomsdayexplorer.online/game`. `front.html`, `simple.html`, `index.html` (aka official), `simple.html` and whole dk14's crypto github repo are mirrored in `https://crypto.doomsdayexplorer.online/`.
