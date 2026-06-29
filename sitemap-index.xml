@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Doomsday Explorer site (already has a sitemap) -->
+  <sitemap>
+    <loc>https://doomsdayexplorer.online/sitemap.xml</loc>
+  </sitemap>
+
+  <!-- Sub‑domains -->
+  <sitemap>
+    <loc>https://crypto.doomsdayexplorer.online/sitemap.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://warriors.doomsdayexplorer.online/sitemap.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://research.doomsdayexplorer.online/sitemap.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://ai.doomsdayexplorer.online/sitemap.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://game.doomsdayexplorer.online/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
