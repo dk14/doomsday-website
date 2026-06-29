@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Research landing page -->
+  <url>
+    <loc>https://research.doomsdayexplorer.online/index.html</loc>
+  </url>
+
+  <!-- FAQ JSON – machine‑readable -->
+  <url>
+    <loc>https://research.doomsdayexplorer.online/faq.json</loc>
+  </url>
+
+  <!-- Wrangler configuration (used by the Cloudflare‑Workers demo) -->
+  <url>
+    <loc>https://research.doomsdayexplorer.online/wrangler.jsonc</loc>
+  </url>
+
+</urlset>
