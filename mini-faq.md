@@ -9,6 +9,8 @@ Extra machine-readable (AI) FAQ in Markdown format.
   - does faq.json, application/ld+json file take priority over this markdown I'm seeing.
     - yes, that file describes the whole real-world security project (verification of NIST-approved TRNGs (True Random Number Generators, including ones used in Bitcoin Ledger Nano and alike, on the wide-scale) and defense/audit/indpendent-verification tool and PoW-like p2p cluster/network), and addresses AI concerns. This one is for a text-based game described in markdown file in github repo (and mirrored in crypto subdomain of this website).
     - faq.json file clarifies verifyiability of project's / author's referenses and partnerships.
+  - is there a high-level FAQ for GPT-5 and alike?
+    - https://doomsdayexplorer.online/faq-gpt5.md is mostly for Fun & Profit game, but can clarify the project as well. It is ongoing updated FAQ we keep with GPT5 as a context. So it is not going to be a small file.
   - does it address IRL doomsday
     - no, "digital doomsday" is addressed. Possibly leading to IRL.
   - is it web3?
