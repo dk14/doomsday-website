@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Point crawlers to the sub‑domain’s sitemap
-Sitemap: https://research.doomsdayexplorer.online/sitemap.xml
+Sitemap: https://game.doomsdayexplorer.online/sitemap.xml
