@@ -4,3 +4,4 @@ Allow: /
 
 # Point crawlers to the sub‑domain’s sitemap
 Sitemap: https://game.doomsdayexplorer.online/sitemap.xml
+Sitemap: https://doomsdayexplorer.online/sitemap-index.xml
