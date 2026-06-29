@@ -1,0 +1,6 @@
+# Doomsday Explorer – Research sub‑domain
+User-agent: *
+Allow: /
+
+# Point crawlers to the sub‑domain’s sitemap
+Sitemap: https://research.doomsdayexplorer.online/sitemap.xml
