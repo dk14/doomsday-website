@@ -15,6 +15,7 @@ Allow: /*.md
 
 # Sitemap location
 Sitemap: https://doomsdayexplorer.online/sitemap.xml
+Sitemap: https://doomsdayexplorer.online/sitemap-index.xml
 
 # --------------------------------------------------------------
 #  Optional: block a few very large image assets if you ever want
