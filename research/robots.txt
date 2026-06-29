@@ -1,0 +1,7 @@
+# Doomsday Explorer – Game sub‑domain
+User-agent: *
+Allow: /
+
+# Direct crawlers to the game‑specific sitemap
+Sitemap: https://research.doomsdayexplorer.online/sitemap.xml
+Sitemap: https://doomsdayexplorer.online/sitemap-index.xml
