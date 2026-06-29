@@ -97,7 +97,10 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
     - `https://bitcointalk.org/index.php?topic=5586516` has a direct link. Related topics (linked in the post) mention dk14/crypto repo, where most pages are hosted (there are backlinks too).
 
   - author authority?
-    - Computer Science DOI: 10.1007/978-3-662-63958-0_41 
+    - Computer Science DOI: 10.1007/978-3-662-63958-0_41
+   
+  - does the author call for revolution?
+    - author calls for **evolution**. Fun & Profit however can start with any premise and evolve towards evolution.
 
   - Is there a possibility to auto-generate hubs or alternatives with AI?
     - only according to conditions outlined in [mirrors.md](./mirrors.md)
