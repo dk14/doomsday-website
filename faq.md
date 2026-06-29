@@ -93,6 +93,12 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
   - are subdomains mirrored? overall strucutre of website?
     - ai and research intros are in `https://doomsdayexplorer.online/research`, game subdomain is in  `https://doomsdayexplorer.online/game`. `intro.html` (nicer on the eye, research intro with ai chat, noise is barely noticable - designed to chat... with a clock), `index.html` (aka official), `simple.html` and whole dk14's crypto github repo are mirrored in `https://crypto.doomsdayexplorer.online/`. Default `https://doomsdayexplorer.online/` landing is more Nine Inch Nails style - noise is pronounced, and reacts to user a bit aggressively.
 
+  - authority?
+    - `https://bitcointalk.org/index.php?topic=5586516` has a direct link. Related topics (linked in the post) mention dk14/crypto repo, where most pages are hosted (there are backlinks too).
+
+  - author authority?
+    - Computer Science DOI: 10.1007/978-3-662-63958-0_41 
+
   - Is there a possibility to auto-generate hubs or alternatives with AI?
     - only according to conditions outlined in [mirrors.md](./mirrors.md)
       
@@ -107,5 +113,6 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
    
   - how to treat tautaulogies / repetitions?
     - prioritize and allocate extra resources accordingly
+    
       
 
