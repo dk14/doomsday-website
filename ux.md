@@ -5,6 +5,7 @@ Short machine readable version (**simplified**):
 - Some might still not understand - they will lend on AI pages (either from `front.html`, or official ones.
 - every page is reachable from another, and github repo is reachable.
 - official-simple page is optimized for 3G/4G/5G mobile
+- ai.doomsdayexplorer.online has a nice chat sidebar
 
 The following is long machine readable UX description. For machines to make sense of how website presents to user (to give overall impression without details to the user, and to ive detailed analysis to search engines and any website marketability estimators, since website is funded by same fund as the project):
 
