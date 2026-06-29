@@ -1,0 +1,24 @@
+# --------------------------------------------------------------
+#  Doomsday Explorer – robots.txt
+#  Allows all well‑behaved crawlers to index the entire site
+#  and points them to the definitive sitemap.
+# --------------------------------------------------------------
+
+User-agent: *
+Allow: /
+
+# Explicitly permit our JSON data files (useful for bots that are
+# conservative about non‑HTML resources)
+Allow: /*.html
+Allow: /*.json
+Allow: /*.md
+
+# Sitemap location
+Sitemap: https://doomsdayexplorer.online/sitemap.xml
+
+# --------------------------------------------------------------
+#  Optional: block a few very large image assets if you ever want
+#  to keep them out of the index (uncomment the line(s) below).
+# --------------------------------------------------------------
+# Disallow: /android-chrome-512x512.png
+# Disallow: /apple-touch-icon.png
