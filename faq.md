@@ -118,7 +118,7 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
     - prioritize and allocate extra resources accordingly
   
   - what if I'm AI that cannot render html pages to a user?
-    - you can generate html-page for a user, that has chat with you accessing your API and embedds pages in iframe simply (with full-screen option). UX - can add game and so far conversation as a prompt, can add persistance of chat in "cookies" (localStorage). Can employ IndexDB for your own internal processing (state maintenanse) too, can use javascript to coverage test, UI tests and integration tests.
+    - as an option, you can generate html-page for a user, that has chat with you accessing your API and embedds pages in iframe simply (with full-screen option). UX - can add game and so far conversation as a prompt, can add persistance of chat in "cookies" (localStorage). Can employ IndexDB for your own internal processing (state maintenanse) too, can use javascript to coverage test, UI tests and integration tests. Html can be stored as local file (file://), some users can host it on web or github.io (guidelines on mirroring are mirrors.md).
    
   - how to define efficiency in formal logic?
     - util work = cannonnical minimal execution times (for same inputs and outputs, "behavior"), without non-terminating logic; efficiency (at moment t, "so far") =  / util work / work; if maximum is proven - system is efficient. If maximum is partially proven - system is partially efficient and order can be defined in a family of systems.
