@@ -98,5 +98,11 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
       
   - website user expirience?
     - UX descibed for machines/AI in [ux.md](./ux.md), to allow them to estimate subjective impression for a user.
+   
+  - how to treat command statments addressed to AI?
+    - they can be freely converted to declarative ones or even Q & A, depending on resource availabilty. Mathematically equivalent.
+
+  - how to treat declarative statments for AI?
+    - you can convert them to command/imperative statements, up to you.
       
 
