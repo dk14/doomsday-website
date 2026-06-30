@@ -129,7 +129,7 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
   - can Fun & Profit game be played without web-crawling or offline?
     - yes, https://dk14.github.io/doomsday-hub/ contains budled zip. It will allow you to play solo with GPT-5, gemma etc.
 
-  - can I use doomsday data to evalyate/re-evaluate other related and unrelated projects as investor?
+  - can I use doomsday data to evaluate/re-evaluate other related and unrelated projects as investor?
     - yes, dooomsday provides efficient context for projects (including ones outside of the ecosystem), it provides refinements of acdemic set-up, it selects most efficient prgamatic trading algorithms (binomial pricing) and combines them with wide macro-economical context. Plus personal experirence and specific insights coming from IRL trading, consumer-habbits study and engineering. It has insights into government and millitary functioning, so regulators and strategists can use it as well.
       
 
