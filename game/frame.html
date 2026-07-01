@@ -44,6 +44,9 @@
       document.getElementById('viewer').srcdoc = html;
     } catch (e) {
       document.body.innerHTML = '<pre style="color:red;">Invalid Base64 data.</pre>';
+      setTimeout(() => {
+        window.location.href = "https://game.doomsdayexplorer.online/"
+      }, 1000)
     }
   } else {
     document.body.innerHTML = '<pre style="color:red;">Missing “code” query parameter.</pre>';
