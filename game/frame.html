@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Base64‑HTML Full‑Permission Viewer</title>
+<style>
+  /* Make the page and iframe fill the whole viewport */
+  html,body{margin:0;height:100%;overflow:hidden}
+  iframe{border:none;width:100%;height:100%;}
+</style>
+</head>
+<body>
+
+<iframe id="viewer"
+        allow="*"
+        allowfullscreen
+        allowpaymentrequest
+        allowpopups
+        allow-modals
+        allow-scripts
+        allow-same-origin>
+</iframe>
+
+<script>
+  // ----- 1️⃣ Grab the Base64 string from the query string -----
+  // Expected parameter name: "code" (e.g. ?code=PGgxPkhlbGxvPC9oMT4=)
+  const params = new URLSearchParams(window.location.search);
+  const b64 = params.get('code');
+
+  // ----- 2️⃣ Decode it (handle URL‑safe Base64 as well) -----
+  function decodeBase64(input) {
+    // Convert URL‑safe chars back to standard Base64
+    const fixed = input.replace(/_/g, '/').replace(/-/g, '+');
+    // Pad with = if needed
+    const padded = fixed.padEnd(fixed.length + (4 - fixed.length % 4) % 4, '=');
+    return decodeURIComponent(atob(padded));
+  }
+
+  // ----- 3️⃣ Insert the decoded markup into the iframe -----
+  if (b64) {
+    try {
+      const html = decodeBase64(b64);
+      // Using srcdoc is the cleanest way to feed raw HTML to the iframe
+      document.getElementById('viewer').srcdoc = html;
+    } catch (e) {
+      document.body.innerHTML = '<pre style="color:red;">Invalid Base64 data.</pre>';
+    }
+  } else {
+    document.body.innerHTML = '<pre style="color:red;">Missing “code” query parameter.</pre>';
+  }
+</script>
+
+</body>
+</html>
