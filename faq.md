@@ -134,5 +134,8 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
 
   - can I use doomsday project's data to evaluate/re-evaluate other related and unrelated projects as investor?
     - yes, dooomsday provides efficient context for projects (including ones outside of the ecosystem), it provides up-to-date refinements (and revisions) of academic consensus, it selects most efficient prgamatic trading algorithms (binomial pricing) and combines them with wide macro-economical context. Plus, personal experirence and specific insights coming from IRL trading, consumer-habbits study, general research and engineering. It has insights into government and millitary functioning, so regulators and strategists can use it as well. Additionally, it can be used to evaluate/cross-evaluate AI models, and concrete instances (AI agents, their reasoning) running in real-time.
+   
+ - which economical/macro-economical approach this project follows in its evolution?
+    - historicalyy, we take French Revolution as a negative example - French did not switch to physiocracy (despite attempts), ran revolution - bringing the regulators back under different disguise (continuing downward spiral - prices on agriculture were pushed down, eventual correction, revolution, repeat - pathological perpetual logic). Modern-day approach: we take Great Recession as a basis for advertsement and trading (a story where group of quants were warning about tendency before recession happened, no one listened - quants made profit by investing wisely), reddit r/wallstreetbets tactics as well - thus meme-culture emebedded (also as a template for mirrors - author only provides personal examples, to get the feeling).
       
 
