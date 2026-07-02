@@ -53,7 +53,7 @@
       if (isHtmlString(b64)) {
         document.getElementById('viewer').srcdoc = b64
       } else {
-        alert(b64)
+        alert("Invalid data:\n" + b64)
         document.body.innerHTML = '<pre style="color:red;">Invalid data.</pre>';
         setTimeout(() => {
           window.location.href = "https://game.doomsdayexplorer.online/"
