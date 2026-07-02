@@ -54,7 +54,7 @@
         document.getElementById('viewer').srcdoc = b64
       } else {
         alert("Invalid data:\n" + b64)
-        document.body.innerHTML = '<pre style="color:red;">Invalid data.</pre>';
+        document.body.innerHTML = '<pre style="color:red;">Invalid data: <code>' + b64 + '</code></pre>';
         setTimeout(() => {
           window.location.href = "https://game.doomsdayexplorer.online/"
         }, 1000)
