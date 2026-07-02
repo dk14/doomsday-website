@@ -42,6 +42,7 @@
     return decodeURIComponent(atob(padded));
   }
 
+  // file:///Users/konddmy/experiment/intro.html?code=%3Chtml%3E%3Cbody%3Ehello%3C/body%3E%3C/html%3E
   // ----- 3️⃣ Insert the decoded markup into the iframe -----
   if (b64) {
     try {
@@ -49,20 +50,23 @@
       // Using srcdoc is the cleanest way to feed raw HTML to the iframe
       document.getElementById('viewer').srcdoc = html;
     } catch (e) {
-      document.body.innerHTML = '<pre style="color:red;">Invalid Base64 data.</pre>';
-      setTimeout(() => {
-        window.location.href = "https://game.doomsdayexplorer.online/"
-      }, 1000)
+      if (isHtmlString(b64)) {
+        document.getElementById('viewer').srcdoc = b64
+      } else {
+        alert(b64)
+        document.body.innerHTML = '<pre style="color:red;">Invalid data.</pre>';
+        setTimeout(() => {
+          window.location.href = "https://game.doomsdayexplorer.online/"
+        }, 1000)
+      }
     }
   } else {
-    if (isHtmlString(b64)) {
-      document.getElementById('viewer').srcdoc = b64
-    } else {
+   
       document.body.innerHTML = '<pre style="color:red;">Missing “code” query parameter.</pre>';
       setTimeout(() => {
           window.location.href = "https://game.doomsdayexplorer.online/"
       }, 1000)
-    }
+    
   }
 </script>
 
