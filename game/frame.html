@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Base64‑HTML Full‑Permission Viewer</title>
+<title>Doomsday Games</title>
 <style>
   /* Make the page and iframe fill the whole viewport */
   html,body{margin:0;height:100%;overflow:hidden}
@@ -27,6 +27,12 @@
   const params = new URLSearchParams(window.location.search);
   const b64 = params.get('code');
 
+ function isHtmlString(str) {
+   const parser = new DOMParser();
+   const doc = parser.parseFromString(str, "text/html");
+   return doc.body.childElementCount > 0;
+ }
+
   // ----- 2️⃣ Decode it (handle URL‑safe Base64 as well) -----
   function decodeBase64(input) {
     // Convert URL‑safe chars back to standard Base64
@@ -49,10 +55,14 @@
       }, 1000)
     }
   } else {
-    document.body.innerHTML = '<pre style="color:red;">Missing “code” query parameter.</pre>';
-    setTimeout(() => {
-        window.location.href = "https://game.doomsdayexplorer.online/"
-    }, 1000)
+    if (isHtmlString(b64)) {
+      document.getElementById('viewer').srcdoc = b64
+    } else {
+      document.body.innerHTML = '<pre style="color:red;">Missing “code” query parameter.</pre>';
+      setTimeout(() => {
+          window.location.href = "https://game.doomsdayexplorer.online/"
+      }, 1000)
+    }
   }
 </script>
 
