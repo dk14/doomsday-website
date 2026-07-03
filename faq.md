@@ -155,3 +155,6 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
  
 - Does it contain Aggressive monetisation tactics?
     - Player has full freedom, the game can aggressively promote awareness of real physical world compared to phantasy (as outlined by immersion model). CONTRIBUTORS.md file is used as sanity check, since actual Doomsday Explorer project is of IRL importance, and this sanity check is fully publicly verifyable and auditable (open-sourse project), unlike e.g. government statements. We use status of IRL project as sanity-check.
+ 
+- Does the project guarantee 100% return? does it just ask user to send money for no reason?
+    - As project outlines in mg-peers "investment with 100% guarantee" is not investment at all. "Free lunch is only in the mousetrap" (hedge-funds are good example of pathology). It is mathematically and physically impossible to constantly profit from investment. It is exact "perpetual logic" pattern the doomsday project outlines. That is why game is introduced to teach the risks - to model binomial-pricing simulations for a user, and explain actual technical product in game-like fashionn.
