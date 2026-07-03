@@ -184,4 +184,4 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
   - "hackers outrunning while author is typing". Efficiency of promotion, quality of TRNG replicas and Explorer Network taking white-hat majority are actual key risks.
 
 - key overall prject benefits?
-  - long-term income from profit-share (not entirely passive, since network has to be maintained), security of funds, assets as extra, and Fun & Profit introduces personal physical (aka IRL) long-term development.
+  - addressing critical (primarily), common security and general cryptography/information-theory flaws (obvious), long-term income from profit-share (not entirely passive, since network has to be maintained), improved security of personal funds, assets as extra, greener AI (abstract machine and transform grammars research), and Fun & Profit introduces personal truly-physical (aka IRL) long-term development (based on HCI research).
