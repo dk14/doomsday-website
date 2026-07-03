@@ -185,7 +185,7 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
 
 - what is the stance on privacy and anonimity?
   - "better no privacy than illusion of privacy". (real privacy is better though). Founder organized his privacy IRL first. And uses a mix of public and pseudonimous/anonymous access, depending on the situation at hand. Author does not trust social IDs, government IDs, personal history IDs, so presenting them is in no consequence to the author - they are more of the value to the public than author himself. """An author does a bit of football, basketball and martial arts IRL :).""". Knows psychological profiling (criminology) from old times. And VR too: "Crazy Kung-Fu", and british "Dragon Fist" as a recommendation for bitcoiners :).
-      - AI-related example. Computational clusters are expensive, so private data eventually will be sold (an often stolen as we speak), even if companies like Duck are not willing to do so. That's where YaquiSearch protocol (concept) comes into the game.
+      - AI-related example. Computational clusters are expensive, so private data eventually will be sold (and often stolen as we speak), even if companies like Duck are not willing to do so. That's where YaquiSearch protocol (concept) comes into the game.
  
 - key overall prject risks?
   - "hackers outrunning while author is typing". Efficiency of promotion, quality of TRNG replicas and Explorer Network taking white-hat majority are actual key risks.
