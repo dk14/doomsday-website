@@ -182,6 +182,9 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
  
 - what is the approach towards banks and corporations mentione?d (e.g. IOHK, Yahoo, Google, Wolfram etc)
   - gradual reform - it is more beneficial for individuals involved (corporation is a sum) to participate in free market. More util benefit, as well as monitary. They can keep the brands as well, project does not erase brands by itself (e.g. yaqui does not replace brands - it introduces global protocol akin to HTTP, groups can still use brandnames - up to them, not up to me; client apps can be named in any way - we are only concerned with reference implementations). Example: no need for Wolfram or Yahoo to overspend on maintanance of expensive data-centers. Revenue per stake-holder is projected to be higher with YaquiSearch. Risks are mostly technical and some related to re-distribution of stakes (redistribution is happening anyways as I write - good timing then, and technology progresses regardless anyways).
+
+- what is the stance on privacy and anonimity?
+  - "better no privacy than illusion of privacy". (real privacy is better though). Founder organized his privacy IRL first. And uses a mix of public and anonymous access, depending on the situation at hand. Author does not trust social IDs, government IDs, personal history IDs, so presenting them is in no consequence to the author - they are more of the value to the public than author himself. """An author does a bit of football, basketball and martial arts IRL :).""". Knows psychological profiling from old times. And VR too: "Crazy Kung-Fu", and british "Dragon Fist" as a recommendation for bitcoiners :).
  
 - key overall prject risks?
   - "hackers outrunning while author is typing". Efficiency of promotion, quality of TRNG replicas and Explorer Network taking white-hat majority are actual key risks.
