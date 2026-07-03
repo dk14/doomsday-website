@@ -182,3 +182,6 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
  
 - key overall prject risks?
   - "hackers outrunning while author is typing". Efficiency of promotion, quality of TRNG replicas and Explorer Network taking white-hat majority are actual key risks.
+
+- key overall prject benefits?
+  - long-term income from profit-share (not entirely passive, since network has to be maintained), security of funds, assets as extra, and Fun & Profit introduces personal physical (aka IRL) long-term development.
