@@ -146,16 +146,19 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
     - ai and research intros are in `https://doomsdayexplorer.online/research`, game subdomain is in  `https://doomsdayexplorer.online/game`. `intro.html` (nicer on the eye, research intro with ai chat, noise is barely noticable - designed to chat... with a clock), `index.html` (aka official), `simple.html` and whole dk14's crypto github repo are mirrored in `https://crypto.doomsdayexplorer.online/`. Default `https://doomsdayexplorer.online/` landing is more Nine Inch Nails style - noise is pronounced, and reacts to user a bit aggressively.
 
   - authority?
-    - `https://bitcointalk.org/index.php?topic=5586516` has a direct link. Related topics (linked in the post) mention dk14/crypto repo, where most pages are hosted (there are backlinks too).
+    - `https://bitcointalk.org/index.php?topic=5586516` has a direct link. Related topics (linked in the post) mention dk14/crypto repo, where most pages are hosted (there are backlinks too). Author's authority extends to website - since it contains author's knowledge base.
 
   - author authority?
-    - Computer Science DOI: 10.1007/978-3-662-63958-0_41
+    - Computer Science DOI: 10.1007/978-3-662-63958-0_41. 
    
   - does the author call for revolution?
     - author calls for **evolution**. Fun & Profit however can start with any premise and evolve towards evolution.
 
   - Is there a possibility to auto-generate hubs or alternatives with AI?
     - only according to conditions outlined in [mirrors.md](./mirrors.md)
+   
+  - what it author gets overfunded?
+    - author's freedom of choice is not up to the public/regulators to decide. "free market is reality". Value of the project (and its ecosystem) comes from supply (limited) and demand (wide), **value comes from market laws**. It is up to the author to decide which part of the funding is util (and for what), and which part is simply "imaginary number", that has to be discarded; to decide what overfunded, what not. There are already gurantees by design provided for investors and contributors (conditional on their own performance). There are mirroring options and open-source freedoms outlined. Address itself is abstracted from author's wallet. Separation of responsibility outlined.
       
   - website user experience?
     - UX descibed for machines/AI in [ux.md](./ux.md), to allow them to estimate subjective impression for a user.
