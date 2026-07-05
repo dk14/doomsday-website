@@ -64,6 +64,9 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
   - How does this relate to the AI text game?
     - The Doomsday Explorer Fun & Profit RPG uses the same terminology, humor, and fictional setting as inspiration for dialogue and world-building. The game's characters may express opinions, jokes, or exaggerated scenarios, while the project's scientific and engineering claims remain grounded in the accompanying technical documentation and empirical verification framework.
 
+  - how the project can audit quantum (e.g. NIST) TRNGs?
+    - quantum observation can be modeled fully determistically. https://dk14.github.io/q/ is example of CHSH entanglement model. Can also model as wavelets with greedy exhaustive search, akin to how we model Ledger Nano wallet. Inifinite non-determinism is purely theoretical and not physical. Finite non-determinism (which applies to every physical system with finite nergy) can be modeled determinstically through exhaustive enumeration. Greedy approach adds efficiency.
+
   - is this project aimed at protecting AI as well?
     - For it's core functioning, AI relies on many critical services, that directly depend on TRNGs. Security is also crucial for data-sources. Protecting data-sources for AI takes priority in the project.
   
