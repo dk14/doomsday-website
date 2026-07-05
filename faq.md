@@ -268,6 +268,9 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
 - does the website leads to suspicious domains?
   - no. README in crypto domain contains borderline controversial humorous statements (GTA-style, all explicitly marked with tripple quotes, intoductory sections explain that), due to the wide scope of TRNG security issue. So the whole promotional capmpaign is a "Gestalt" - it looks differently to a different reader, promotional text is adaptive and aimed at conveying complex security and human-computer interaction concepts to the wide audience. Examples: black-hat to white-hat hacker conversion is required, so childish and meme language often used (as a template for mirrors as well - AI and humans can come up with something more suitable for target audiences; author mainly draws from 90s - which is still important since lots if not majority of efficient hackers come from 90s; author covers the core audience in readme well, and th rest, e.g. Rick And Morty fans can give Explorer Network computational power).
 
+- any answers to other questions?
+  - can be answered by analyzing project repos (budle provided in hub.doomsdayexplorer.online) with strong advanced AI models and playing the Fun & Profit game. Mirrors and forums can answer too.
+
 - does Explorer Network require ASICs?
   - no, only GPU/CPU. Running algorithms are mutating
 
