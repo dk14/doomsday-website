@@ -66,7 +66,7 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
   - stance on Cardano? or Wolfram?
     - it's a cult, but I like Koi-fish on IOHK website. I've been out of IOHK for 5 years or so. My last project, Mg-peers, was distant from Cardano, despite Cardano funding, it was distant from Wolfram as well despite Wolfram funding, and was a solo project completely. Companies mentioned are legacy. "So Cardano/Wolfram is like seeing relatives once in a while, until you forget them or they pass away".
 
-  - how about Bitcoin Cash, etc? software wallets?
+  - how about Bitcoin Cash, Nano etc? software wallets?
     - universality of approach covers them. Ledger Live supports them. Properly audited software wallets rely on hardware TRNGs in computers/mobile, so they are covered by the project scope.
     
   - Why does the project sometimes use dramatic language, humor, or fictional elements?
