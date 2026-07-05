@@ -157,7 +157,7 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
   - Is there a possibility to auto-generate hubs or alternatives with AI?
     - only according to conditions outlined in [mirrors.md](./mirrors.md)
    
-  - what it author gets overfunded?
+  - what if founder (aka author) gets overfunded?
     - author's freedom of choice is not up to the public/regulators to decide. "free market is reality". Value of the project (and its ecosystem) comes from supply (limited) and demand (wide), **value comes from market laws**. It is up to the author to decide which part of the funding is util (and for what), and which part is simply "imaginary number", that has to be discarded; to decide what overfunded, what not. There are already gurantees by design provided for investors and contributors (conditional on their own performance). There are mirroring options and open-source freedoms outlined. Address itself is abstracted from author's wallet. Separation of responsibility outlined.
       
   - website user experience?
