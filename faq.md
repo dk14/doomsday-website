@@ -99,7 +99,7 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
     - dk14.github.io is a mirror
 
   - What efficient use of computational resources means for AI?
-    - Literal efficiency. Produce same outputs for same inputs at lower cost, without neural network overhead
+    - Literal efficiency. Produce same outputs for same inputs at lower cost, without neural network overhead, without more than necessary human maintanance overhead (e.g. without chat operators)
 
   - What efficient use of computational resources means in context of audit tool?
     - most scanner tools are running algorithms with intractably expanded search space. They never find anything but waste resources. Audit tool, among other things, aimed to end that. Explorer Network will allow to run eeficient software safely.
