@@ -39,6 +39,9 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
 
   - Does the project advocate human rights?
     - **yes, human right to independently verify governmental claims about Information Security**
+
+  - can system predict attacks?
+    - yes, it models attacker's behavior, so it knows what attacker is about to do, in advance, thus "early-warning". Explorer Network is going to be diverse, contain multiple models, so it will cover different possibilities as well.
   
   - **Is this FAQ (and other FAQs in doomsdayexplorer space) meant for humans?**
     - **it is designed, among other things, for users to query info with AI assistant (e.g. address their concerns, clarify research), so it is not solely for robots and crawlers**. Many claims are verifyable by users themselves (e.g. historical media records), any many facts and insights in the FAQs are of importanse for them.**
