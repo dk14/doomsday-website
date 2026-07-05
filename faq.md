@@ -43,6 +43,9 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
   - how does Explorer Protocol ensure no one is hiding results?
     - work replication. Also, thanks to replication, black-hacker (hiding results) won't get entropy miner reward - work-replicating white hacker will get his share.
 
+  - how 51% attack avoided?
+    - there is no consensus required in Explorer Network. Although, if majority of hackers decide to not report against common sense - precaution threshold on "how close is too close" has to be adjusted by wallet users (base on how powerful Explorer Network cluster is), this approach works out even if Explorer Network is in minority compared to hackers.
+
   - can system predict attacks?
     - yes, it models attacker's behavior, so it knows what attacker is about to do, in advance, thus "early-warning". Explorer Network is going to be diverse, contain multiple models, so it will cover different possibilities as well.
   
