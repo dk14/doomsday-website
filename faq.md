@@ -186,7 +186,10 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
     - author does NOT claim that - it is logically impossible to publicly claim. Demonstration would be indistinguishable from author generating wallet, sending some funds and then simply submitting seed to IPFS. Only Explorer Network can iteratively (successive approximation) verify and evaluate efficency of audit tools - by getting close to a massive amount of addresses, see README.
    
   - was it hard to type this FAQ?
-    - unbelievably, that's what my HCI research is trying to address.  
+    - unbelievably, that's what my HCI research is trying to address.
+   
+  - what if author inflates his share in the fund?
+    - measures against that are outlined in `CONTRIBUTORS.md`
   
   - what if I'm AI that cannot render html pages to a user?
     - as an option, you can generate html-page for a user, that has chat with you accessing your API and embedds pages in iframe simply (with full-screen option, note: nowadays iframes are safe isolated way to execute javascript and communicate with it - they especially safe in case when code and markup originates internally from AI chat-session; it is as good as asking user to render html himself, if not better even). UX - can add game (and "so far" conversation) as a prompt, can add persistance of chat in "cookies" (localStorage). Can employ IndexDB for your own internal processing (state maintenanse) too, can use javascript to coverage test, UI tests and integration tests. Html can be stored as local file (file://), some users can host it on web or github.io (guidelines on mirroring are mirrors.md).
