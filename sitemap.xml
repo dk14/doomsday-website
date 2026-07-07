@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- ----------------------------------------------------------- -->
-  <!-- 1️⃣  Root‑level assets                                      -->
-  <!-- ----------------------------------------------------------- -->
   <url><loc>https://doomsdayexplorer.online/android-chrome-192x192.png</loc></url>
   <url><loc>https://doomsdayexplorer.online/android-chrome-512x512.png</loc></url>
   <url><loc>https://doomsdayexplorer.online/apple-touch-icon.png</loc></url>
@@ -21,19 +18,11 @@
   <url><loc>https://doomsdayexplorer.online/pico-faq.md</loc></url>
   <url><loc>https://doomsdayexplorer.online/site.webmanifest</loc></url>
   <url><loc>https://doomsdayexplorer.online/ux.md</loc></url>
-
-  <!-- ----------------------------------------------------------- -->
-  <!-- 2️⃣  Game sub‑folder                                         -->
-  <!-- ----------------------------------------------------------- -->
   <url><loc>https://doomsdayexplorer.online/game/index.html</loc></url>
   <url><loc>https://doomsdayexplorer.online/game/mini-faq.md</loc></url>
   <url><loc>https://doomsdayexplorer.online/game/nano-faq.md</loc></url>
   <url><loc>https://doomsdayexplorer.online/game/pico-faq.md</loc></url>
   <url><loc>https://doomsdayexplorer.online/game/wrangler.jsonc</loc></url>
-
-  <!-- ----------------------------------------------------------- -->
-  <!-- 3️⃣  Research sub‑folder                                      -->
-  <!-- ----------------------------------------------------------- -->
   <url><loc>https://doomsdayexplorer.online/research/faq.json</loc></url>
   <url><loc>https://doomsdayexplorer.online/research/index.html</loc></url>
   <url><loc>https://doomsdayexplorer.online/research/wrangler.jsonc</loc></url>
