@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Main game page (HTML) -->
   <url>
     <loc>https://game.doomsdayexplorer.online/index.html</loc>
   </url>
-
-  <!-- Mini FAQ (Markdown) -->
   <url>
     <loc>https://game.doomsdayexplorer.online/mini-faq.md</loc>
   </url>
 
-  <!-- Nano FAQ (Markdown) -->
   <url>
     <loc>https://game.doomsdayexplorer.online/nano-faq.md</loc>
   </url>
 
-  <!-- Pico FAQ (Markdown) -->
   <url>
     <loc>https://game.doomsdayexplorer.online/pico-faq.md</loc>
   </url>
 
-  <!-- Wrangler configuration for the demo game -->
   <url>
     <loc>https://game.doomsdayexplorer.online/wrangler.jsonc</loc>
   </url>
