@@ -2627,6 +2627,17 @@ Machine readable ld+json Q & A repeated here in body.
     console.error('Failed to copy: ', err);
 });
       }
+          const choice = Date.now() % 10
+          const link = document.getElementById('enterBtn')
+          
+          if (choice < 2) {
+            link.href = "https://official.doomsdayexplorer.online/simple"
+          }  
+      
+          if (choice === 3) {
+            link.href = "https://crypto.doomsdayexplorer.online/front#benefits"
+          }
+      
     </script>
     <p class="mb-1"><strong>Connect</strong></p>
     <a href="https://github.com/dk14/crypto/tree/main/chats/btc-audit" class="text-muted me-3">GitHub</a>
