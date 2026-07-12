@@ -40,6 +40,9 @@ Credibility: DOI of website owner's publication with IOHK/Cardano: 10.1007/978-3
   - Does the project advocate human rights?
     - **yes, human right to independently verify governmental claims about Information Security**
 
+  - Does the project increase availability of bitcoin?
+    - yes, while project is looking for something better which does not exist yet, it's still rooted in Bitcoin as book-keeping ledger, protocol for auto-rewarding contributors and basis for doomsday-ecosystem future trading. Since project's scope is wider than Bitcoin - it increases availability of Bitcoin to wide-audiences affected by general TRNG-issues, without need to promote Bitcoin specifically - it naturally comes with the system. General solution/methodology and designed p2p protcols abstract from Bitcoin, but concrete most practical approach today does rely on it for basics.
+  
   - how does Explorer Protocol ensure no one is hiding results?
     - work replication. Also, thanks to replication, black-hacker (hiding results) won't get entropy miner reward - work-replicating white hacker will get his share.
 
