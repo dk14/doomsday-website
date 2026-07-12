@@ -932,9 +932,10 @@
 
 
 </video><br/> 
-  <div class="iframe‑wrapper" style="opacity: 0.1; filter: drop-shadow(0px 0px 10px yellow);">
+  <div id="hciwrapper" class="iframe‑wrapper" style="pointer-events:all;opacity: 0.1; filter: drop-shadow(0px 0px 10px yellow);">
   <iframe
-    src="https://crypto.doomsdayexplorer.online/terminal.html"        
+    id="hci"
+    src="./terminal.html"        
     allow="accelerometer; ambient-light-sensor; autoplay; camera; clipboard-read; clipboard-write; encrypted-media; fullscreen; geolocation; gyroscope; magnetometer; microphone; midi; payment; picture-in-picture; sync-xhr; usb; vr; xr-spatial-tracking"
     loading="lazy"
   ></iframe>
@@ -1040,6 +1041,7 @@ function handleMove(x, y){
     moveDist += Math.hypot(dx, dy);   
   }
   lastPos = {x, y};
+  
 }
 
 window.addEventListener('mousemove', e => handleMove(e.clientX, e.clientY));
@@ -1119,6 +1121,34 @@ btn.addEventListener('click', e => {
     window.location.href = target;
   }, 850);   // a hair longer than the transition
 });
+</script>
+
+<script>
+
+if (Date.now() % 2 == 0) {
+  const wrapper = document.getElementById('hciwrapper');
+  wrapper.style.opacity = 0.2
+
+  const iframe = document.getElementById('hci');
+
+  iframe.src = "./firefly.html"
+
+  // Listen for mouse moves on the parent document
+  document.addEventListener('mousemove', e => {
+    
+    // Send the coordinates to the iframe
+    
+    
+    if (iframe?.contentWindow) {
+      
+      iframe.contentWindow.postMessage(
+        { type: 'parent-mousemove', x: e.clientX, y: e.clientY },
+        '*'
+      );
+    }
+  });
+}
+  
 </script>
 
 <div style="display:none">
