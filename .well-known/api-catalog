@@ -1,0 +1,81 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://doomsdayexplorer.online/",
+      "service-doc": [
+        {
+          "href": "https://doomsdayexplorer.online/llms.txt",
+          "type": "text/plain",
+          "title": "LLMs.txt"
+        },
+        {
+          "href": "https://doomsdayexplorer.online/auth.md",
+          "type": "text/markdown",
+          "title": "Agent Authentication"
+        }
+      ],
+      "status": {
+        "href": "https://doomsdayexplorer.online/",
+        "type": "text/html",
+        "title": "Site Status"
+      }
+    },
+    {
+      "anchor": "https://doomsdayexplorer.online/.well-known/agent-skills/index.json",
+      "self": {
+        "href": "https://doomsdayexplorer.online/.well-known/agent-skills/index.json",
+        "type": "application/json",
+        "title": "Agent Skills Discovery Index"
+      },
+      "service-desc": {
+        "href": "https://agentskills.io/schemas/index/v0.2.0.json",
+        "type": "application/json",
+        "title": "Agent Skills Schema"
+      }
+    },
+    {
+      "anchor": "https://doomsdayexplorer.online/.well-known/mcp/server-card.json",
+      "self": {
+        "href": "https://doomsdayexplorer.online/.well-known/mcp/server-card.json",
+        "type": "application/json",
+        "title": "MCP Server Card"
+      },
+      "service-desc": {
+        "href": "https://spec.modelcontextprotocol.io/spec/2025-03-26/server/card.json",
+        "type": "application/json",
+        "title": "MCP Server Card Schema"
+      }
+    },
+    {
+      "anchor": "https://hub.doomsdayexplorer.online",
+      "service-doc": {
+        "href": "https://hub.doomsdayexplorer.online/releases/UNIFIED_DOCS.md",
+        "type": "text/markdown",
+        "title": "Fun & Profit AI-text-game In a Single MD - together with all project data"
+      }
+    },
+    {
+      "anchor": "https://crypto.doomsdayexplorer.online/front",
+      "service-doc": [
+        {
+          "href": "https://github.com/dk14/crypto/edit/main/chats/btc-audit/README.md",
+          "type": "text/markdown",
+          "title": "R&D Project README"
+        },
+        {
+          "href": "https://crypto.doomsdayexplorer.online/article.pdf",
+          "type": "application/pdf",
+          "title": "Pre-print Article"
+        }
+      ]
+    },
+    {
+      "anchor": "https://official.doomsdayexplorer.online",
+      "service-doc": {
+        "href": "https://doomsdayexplorer.online/faq.md",
+        "type": "text/markdown",
+        "title": "Project FAQ"
+      }
+    }
+  ]
+}
