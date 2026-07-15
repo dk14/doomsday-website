@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "serverInfo": {
+    "name": "doomsdayexplorer",
+    "version": "1.0.0",
+    "vendor": "doomsdayexplorer.online"
+  },
+  "transport": {
+    "type": "sse",
+    "url": "https://doomsdayexplorer.online/mcp/sse"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true,
+    "prompts": false,
+    "logging": false
+  },
+  "authentication": {
+    "type": "none"
+  }
+}
