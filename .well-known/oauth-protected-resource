@@ -1,0 +1,13 @@
+{
+  "resource": "https://doomsdayexplorer.online/",
+  "authorization_servers": [],
+  "bearer_methods_supported": [],
+  "scopes_supported": [],
+  "agent_auth": {
+    "register_uri": null,
+    "identity_types_supported": [],
+    "credential_types_supported": [],
+    "claims_supported": [],
+    "revocation_uri": null
+  }
+}
