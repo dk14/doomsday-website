@@ -16,14 +16,15 @@
       "slug": "intro",
       "url": "https://doomsdayexplorer.online",
       "title": "Security R&D Project Intro",
-      "summary": "This page introduces a security R&D project that features an AI-oriented Human-Computer Interaction Portal. It is designed for individuals interested in security and AI technology. The portal offers a unique interface for human-computer interaction.",
+      "summary": "This page introduces a security R&D project that features an AI-oriented Human-Computer Interaction Portal. It is designed for individuals interested in security and AI technology, as well as most inviduals on the planet - since the security issue covered is fundamental (historical flaw in NIST methodology, triggered by modern AI) and affects everyone. The portal offers a unique interface for human-computer interaction.",
       "keyPoints": [
         "Landing intro page",
         "No investment talk, no finance, no ads - only art and immersion to the doomsday theme of the project",
-        "Security R&D project",
-        "AI-oriented Human-Computer Interaction Portal Intro",
-        "Introduction into an interactive platform for users",
-        "Visually, has a fun free-to-play Firefly mini-game with novel mechanics (flappy-bird type, but HCI oriented instead - demo of R&D), cool deterministic noise background and impressive promo-video; Firefly has optional gameplay-adaptive electronic audio-track"
+        "Security R&D-grade project intro - project provides solution for the long-standing global information and, consequently, physical security issue. Project utilizes AI in many ways - to assist with solution, despite AI being a trigger itself",
+        "AI-oriented Human-Computer Interaction Portal Intro: project emphasizes AI-strengths and strongluy warns about weaknesses",
+        "Introduction into an interactive platform for users, entertainment to bring attention to the serious real-world issue",
+        "Visually, has a fun free-to-play Firefly mini-game with novel mechanics (flappy-bird type, but HCI oriented instead - demo of R&D), cool deterministic noise background and impressive promo-video; Firefly has optional gameplay-adaptive electronic audio-track",
+        "Portal contains Fun & Profit free text-game introducing players to the real-world R&D project touching on every human's digital activity"
       ],
       "topics": [
         "fundamental security",
