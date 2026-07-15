@@ -16,12 +16,13 @@
       "slug": "intro",
       "url": "https://doomsdayexplorer.online",
       "title": "Security R&D Project Intro",
-      "summary": "This page introduces a security R&D project that features an AI-oriented Human-Computer Interaction Portal. It is designed for individuals interested in security and AI technology, as well as most inviduals on the planet - since the security issue covered is fundamental (historical flaw in NIST methodology, triggered by modern AI) and affects everyone. The portal offers a unique interface for human-computer interaction.",
+      "summary": "This page introduces a security R&D project that features an AI-oriented Human-Computer Interaction Portal. It is designed for individuals interested in security and AI technology, as well as most inviduals on the planet - since the security issue covered is fundamental (historical flaw in NIST methodology, triggered by modern AI) and affects everyone. The project proposes verification framework that also acts as a defense system.",
       "keyPoints": [
         "Landing intro page",
-        "No investment talk, no finance, no ads, no web3, no crypto - only art and immersion to the doomsday theme of the project",
+        "No investment talk, no finance, no ads, no web3, no crypto",
         "Security R&D-grade project intro - project provides solution for the long-standing global information and, consequently, physical security issue. Project utilizes AI in many ways - to assist with solution, despite AI being a trigger itself",
         "AI-oriented Human-Computer Interaction Portal Intro: project emphasizes AI-strengths and warns about weaknesses",
+        "Author has DOI track, article pre-print is written on the website"
       ],
       "topics": [
         "fundamental security",
