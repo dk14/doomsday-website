@@ -142,6 +142,7 @@
         "Rewards for advertisers, promo-game players (optionally), and other contributors",
         "Page sharing buttons available",
         "emphasis on urgency due to AI being able to write advanced audit tools, make existing ones accessible to hackers",
+        "improved satoshi development model - independency from authors is emphasized, approach is optional on anonymity - seggregated approach recommended, and decentralisation without fragmentation",
       ],
       "topics": [
         "TRNG audit",
@@ -161,6 +162,29 @@
         "markdown": "https://doomsdayexplorer.online/faq.md",
         "markdown": "https://github.com/dk14/crypto/edit/main/chats/btc-audit/README.md"
         "canonical": "https://crypto.doomsdayexplorer.online/front"
+      }
+    },{
+      "slug": "article",
+      "url": "https://crypto.doomsdayexplorer.online/article.pdf",
+      "title": "Doomsday Explorer: distributed computationsal systemm for scientific entropy claim verification",
+      "summary": "The pre-print introduces novel methodology for verification of classical and quantum entropy claims",
+      "keyPoints": [
+        "de-centralized distributed computational cluster is proposed to verify any entropy claim. It is theorem-agnostic, physics-agnostic",
+        "it covers NIST claims, complements and expands the scope of all existing methodologies",
+        "novel methodology, pending peer-review, pending certified global adoption",
+        "available right now to to test independently from institutions at doomsdayexplorer.online"
+      ],
+      "topics": [
+        "universal entropy audit methodology",
+        "classical mechanics",
+        "quantum meechanics",
+        "distributed systems"
+      ],
+      "category": "Information Theory",
+      "updatedAt": "2026-07-15T03:59:03.105Z",
+      "sources": {
+        "markdown": "https://crypto.doomsdayexplorer.online/article.tex"
+        "canonical": "https://crypto.doomsdayexplorer.online/article.pdf"
       }
     }
   ]
