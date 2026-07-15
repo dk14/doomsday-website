@@ -23,3 +23,51 @@ Sitemap: https://doomsdayexplorer.online/sitemap-index.xml
 # --------------------------------------------------------------
 # Disallow: /android-chrome-512x512.png
 # Disallow: /apple-touch-icon.png
+
+User-agent: GPTBot
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: ChatGPT-User
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: ClaudeBot
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: Claude-User
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: PerplexityBot
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: Google-Extended
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: Applebot-Extended
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: Bytespider
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: CCBot
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+User-agent: *
+Allow: /
+Content-Signal: ai-input=yes, search=yes, ai-train=yes
+
+# Machine-readable indexes for agents:
+# - https://doomsdayexplorer.online/faq
+# - https://doomsdayexplorer.online/faq.md
