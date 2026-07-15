@@ -148,7 +148,7 @@
         "Rewards for advertisers, promo-game players (optionally), and other contributors",
         "Page sharing buttons available",
         "emphasis on urgency due to AI being able to write advanced audit tools, make existing ones accessible to hackers",
-        "improved satoshi development model - independency from authors is emphasized, approach is optional on anonymity - seggregated approach recommended, and decentralisation without fragmentation",
+        "improved satoshi development model - independency from authors is emphasized, approach is optional on anonymity - seggregated approach recommended, and decentralisation without fragmentation"
       ],
       "topics": [
         "TRNG audit",
@@ -166,7 +166,7 @@
       "updatedAt": "2026-07-15T03:59:03.105Z",
       "sources": {
         "markdown": "https://doomsdayexplorer.online/faq.md",
-        "markdown": "https://github.com/dk14/crypto/edit/main/chats/btc-audit/README.md"
+        "markdown": "https://github.com/dk14/crypto/edit/main/chats/btc-audit/README.md",
         "canonical": "https://crypto.doomsdayexplorer.online/front"
       }
     },{
@@ -189,7 +189,7 @@
       "category": "Information Theory",
       "updatedAt": "2026-07-15T03:59:03.105Z",
       "sources": {
-        "markdown": "https://crypto.doomsdayexplorer.online/article.tex"
+        "markdown": "https://crypto.doomsdayexplorer.online/article.tex",
         "canonical": "https://crypto.doomsdayexplorer.online/article.pdf"
       }
     }
