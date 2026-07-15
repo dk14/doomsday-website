@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agentskills.io/schemas/index/v0.2.0.json",
+  "skills": [
+    {
+      "name": "dns-aid",
+      "type": "discovery",
+      "description": "DNS-based agent discovery using DNS-AID (RFC 9460 SVCB/HTTPS records) with DNSSEC-authenticated data",
+      "url": "https://doomsdayexplorer.online/.well-known/agent-skills/dns-aid/SKILL.md",
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "mcp-server-card",
+      "type": "protocol",
+      "description": "MCP Server Card for Model Context Protocol server discovery and capability negotiation",
+      "url": "https://doomsdayexplorer.online/.well-known/agent-skills/mcp-server-card/SKILL.md",
+      "digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
