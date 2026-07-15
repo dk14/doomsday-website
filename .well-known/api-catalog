@@ -76,6 +76,13 @@
         "type": "text/markdown",
         "title": "Project FAQ"
       }
+    },{
+      "anchor": "https://doomsdayexplorer.online/",
+      "payment": {
+        "href": "bitcoin:bc1qekvmkczge3hxrvwdf2lj3yyvgjnparn3fdf9lg",
+        "type": "text/uri-list",
+        "title": "Bitcoin Payment Address"
+      }
     }
   ]
 }
