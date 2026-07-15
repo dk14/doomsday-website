@@ -1,0 +1,6 @@
+Machine-readable indexes for agents:
+
+https://doomsdayexplorer.online/faq
+https://doomsdayexplorer.online/faq.md
+
+They point to the rest of FAQs on the website
