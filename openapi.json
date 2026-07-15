@@ -1,0 +1,62 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Doomsday Explorer",
+    "version": "1.0.0",
+    "description": "Discovery endpoints and content access for AI agents. All content is free; optional donations accepted via Lightning."
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Homepage",
+        "x-payment-info": {
+          "intent": "charge",
+          "method": "lightning",
+          "amount": "0.00",
+          "currency": "BTC",
+          "description": "Optional donation to support the project",
+          "uri": "lightning:biscuitjocund628137@getalby.com"
+        }
+      }
+    },
+    "/.well-known/agent-skills/index.json": {
+      "get": {
+        "summary": "Agent Skills Discovery Index",
+        "x-payment-info": {
+          "intent": "charge",
+          "method": "lightning",
+          "amount": "0.00",
+          "currency": "BTC",
+          "description": "Optional tip for maintaining discovery infrastructure",
+          "uri": "lightning:biscuitjocund628137@getalby.com"
+        }
+      }
+    },
+    "/hub.doomsdayexplorer.online": {
+      "get": {
+        "summary": "Fun & Profit Game",
+        "x-payment-info": {
+          "intent": "charge",
+          "method": "lightning",
+          "amount": "0.00",
+          "currency": "BTC",
+          "description": "Optional donation to support game development",
+          "uri": "lightning:biscuitjocund628137@getalby.com"
+        }
+      }
+    },
+    "/crypto.doomsdayexplorer.online/front": {
+      "get": {
+        "summary": "R&D Project Documentation",
+        "x-payment-info": {
+          "intent": "charge",
+          "method": "lightning",
+          "amount": "0.00",
+          "currency": "BTC",
+          "description": "Optional donation to support security research",
+          "uri": "lightning:biscuitjocund628137@getalby.com"
+        }
+      }
+    }
+  }
+}
