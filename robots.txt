@@ -12,6 +12,8 @@ Allow: /
 Allow: /*.html
 Allow: /*.json
 Allow: /*.md
+Allow: /*.js
+Allow: /*.ts
 
 # Sitemap location
 Sitemap: https://doomsdayexplorer.online/sitemap.xml
