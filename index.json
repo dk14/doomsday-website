@@ -6,11 +6,10 @@
   },
   "generatedAt": "2026-07-15T03:59:21.595Z",
   "surfaces": {
-    "llmsTxt": "https://agent-visibility-template.mtkndr.workers.dev/llms.txt",
+    "llmsTxt": "https://doomsdayexplorer.online/llms.txt",
     "llmsFullTxt": "https://agent-visibility-template.mtkndr.workers.dev/llms-full.txt",
-    "json": "https://agent-visibility-template.mtkndr.workers.dev/index.json",
-    "pageMarkdown": "https://agent-visibility-template.mtkndr.workers.dev/{slug}.md",
-    "robots": "https://agent-visibility-template.mtkndr.workers.dev/robots.txt"
+    "json": "https://doomsdayexplorer.online/index.json",
+    "robots": "https://doomsdayexplorer.online/robots.txt"
   },
   "pages": [
     {
@@ -36,6 +35,30 @@
       "sources": {
         "markdown": "https://doomsdayexplorer.online/faq.md",
         "canonical": "https://doomsdayexplorer.online"
+      }
+    },{
+      "slug": "research-intro",
+      "url": "https://doomsdayexplorer.online",
+      "title": "Security R&D Project Intro",
+      "summary": "This page prompts user to use AI for research, gives nice visual environment and sidebar for AI-chat.",
+      "keyPoints": [
+        "researcher intro",
+        "chat intro",
+        "ai-enthusiast intro",
+      ],
+      "topics": [
+        "fundamental security",
+        "entropy audits",
+        "digital wallet and asset security",
+        "ai",
+        "human-computer interaction",
+        "research and development"
+      ],
+      "category": "research ai",
+      "updatedAt": "2026-07-15T03:58:48.084Z",
+      "sources": {
+        "markdown": "https://doomsdayexplorer.online/faq.md",
+        "canonical": "https://research.doomsdayexplorer.online"
       }
     },
     {
