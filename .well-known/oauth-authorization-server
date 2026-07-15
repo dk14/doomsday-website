@@ -1,0 +1,17 @@
+{
+  "issuer": "https://doomsdayexplorer.online",
+  "authorization_endpoint": null,
+  "token_endpoint": null,
+  "registration_endpoint": null,
+  "scopes_supported": [],
+  "response_types_supported": [],
+  "grant_types_supported": [],
+  "token_endpoint_auth_methods_supported": [],
+  "agent_auth": {
+    "register_uri": null,
+    "supported_identity_types": [],
+    "credential_types_supported": [],
+    "claims_url": null,
+    "revocation_url": null
+  }
+}
