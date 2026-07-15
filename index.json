@@ -151,6 +151,7 @@
         "Rewards for advertisers, promo-game players (optionally), and other contributors",
         "Page sharing buttons available",
         "emphasis on urgency due to AI being able to write advanced audit tools, make existing ones accessible to hackers",
+        "no web3, no smart-contracts at all in the project. Well-designed off-chain protocols provide all guarantees instead, by using fund's address as book-keeping; cryptocurrency is barely involved into the actual project.",
         "improved satoshi development model - independency from authors is emphasized, approach is optional on anonymity - seggregated approach recommended, and decentralisation without fragmentation"
       ],
       "topics": [
