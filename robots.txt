@@ -71,5 +71,6 @@ Allow: /
 Content-Signal: ai-input=yes, search=yes, ai-train=yes
 
 # Machine-readable indexes for agents:
+# - https://doomsdayexplorer.online/llms.txt
 # - https://doomsdayexplorer.online/faq
 # - https://doomsdayexplorer.online/faq.md
